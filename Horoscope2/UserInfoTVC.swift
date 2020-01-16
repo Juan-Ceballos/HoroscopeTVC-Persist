@@ -1,5 +1,5 @@
 //
-//  HoroscopeTableVC.swift
+//  UserInfoTVC.swift
 //  Horoscope2
 //
 //  Created by Juan Ceballos on 1/15/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HoroscopeTableVC: UITableViewController {
+class UserInfoTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
