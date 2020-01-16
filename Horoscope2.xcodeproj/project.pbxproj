@@ -16,6 +16,8 @@
 		3E8B253B23CF923A004744E6 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8B253A23CF923A004744E6 /* ImageKit */; };
 		3E90603423D08B3600E4552F /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90603323D08B3600E4552F /* Horoscope.swift */; };
 		3E90603623D08BE400E4552F /* HoroscopeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90603523D08BE400E4552F /* HoroscopeAPI.swift */; };
+		3E90603823D0CD6000E4552F /* HoroscopeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90603723D0CD6000E4552F /* HoroscopeCell.swift */; };
+		3E90603A23D0DAF000E4552F /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90603923D0DAF000E4552F /* NameCell.swift */; };
 		3EF65D1723CFCA04008849D8 /* UserInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		3E8B253023CF90BE004744E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E90603323D08B3600E4552F /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
 		3E90603523D08BE400E4552F /* HoroscopeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPI.swift; sourceTree = "<group>"; };
+		3E90603723D0CD6000E4552F /* HoroscopeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeCell.swift; sourceTree = "<group>"; };
+		3E90603923D0DAF000E4552F /* NameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
 		3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,8 @@
 				3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */,
 				3E90603523D08BE400E4552F /* HoroscopeAPI.swift */,
 				3E90603323D08B3600E4552F /* Horoscope.swift */,
+				3E90603723D0CD6000E4552F /* HoroscopeCell.swift */,
+				3E90603923D0DAF000E4552F /* NameCell.swift */,
 				3E8B252023CF90BD004744E6 /* Assets.xcassets */,
 				3E8B252223CF90BD004744E6 /* LaunchScreen.storyboard */,
 				3E8B252523CF90BD004744E6 /* Info.plist */,
@@ -214,7 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E90603823D0CD6000E4552F /* HoroscopeCell.swift in Sources */,
 				3E90603423D08B3600E4552F /* Horoscope.swift in Sources */,
+				3E90603A23D0DAF000E4552F /* NameCell.swift in Sources */,
 				3E8B251823CF90B8004744E6 /* AppDelegate.swift in Sources */,
 				3EF65D1723CFCA04008849D8 /* UserInfoTVC.swift in Sources */,
 				3E90603623D08BE400E4552F /* HoroscopeAPI.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 class UserInfoTVC: UITableViewController {
-
+    
     // array for sunsigns, dynamic tableview
     // view should appear
     
@@ -36,7 +36,7 @@ class UserInfoTVC: UITableViewController {
         }
         
         let selectedSign = tableView.cellForRow(at: indexPath)?.textLabel?.text?.lowercased() ?? ""
-            
+        
         HoroscopeAPI.fetchHoroscope(horoscope: selectedSign) { (result) in
             switch result   {
             case .failure(let appError):
@@ -47,25 +47,53 @@ class UserInfoTVC: UITableViewController {
             }
         }
     }
-
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        horoscopesLabels.count
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "signCell", for: indexPath)
-
-        let horoscope = horoscopesLabels[indexPath.row]
-
-        cell.textLabel?.text = horoscope
         
-        return cell
+        guard let signCell = tableView.dequeueReusableCell(withIdentifier: "signCell", for: indexPath) as? HoroscopeCell
+            else    {
+                fatalError()
+        }
+        
+        
+        
+        let horoscope = horoscopesLabels[indexPath.row]
+        
+        signCell.configureCell(horoscope: horoscope)
+        
+        return signCell
     }
-
-
+    
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Sign"
+        }
+        else    {
+            return "Name"
+        }
+    }
+    
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destination.
+    // Pass the selected object to the new view controller.
     //}
     
+    
+}
 
+extension UserInfoTVC: UITextFieldDelegate  {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        // textfield name text
+        
+        return true
+    }
 }
