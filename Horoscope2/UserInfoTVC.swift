@@ -10,6 +10,8 @@ import UIKit
 
 class UserInfoTVC: UITableViewController {
 
+    var horoscopes = [Horoscope]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,7 +30,7 @@ class UserInfoTVC: UITableViewController {
             case .failure(let appError):
                 print(appError)
             case .success(let horoscope):
-                print(horoscope)
+                self.horoscopes = horoscope
             }
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 import NetworkHelper
 
 class HoroscopeAPI  {
-    static func fetchHoroscope(horoscope: String, completion: @escaping (Result<Horoscope, AppError>) -> ())    {
+    static func fetchHoroscope(horoscope: String, completion: @escaping (Result<[Horoscope], AppError>) -> ())    {
         let endpointURL = "http://sandipbgt.com/theastrologer/api/horoscope/\(horoscope)/today/"
         
         guard let url = URL(string: endpointURL)
@@ -27,7 +27,7 @@ class HoroscopeAPI  {
                 print(appError)
             case .success(let data):
                 do  {
-                    let horo = try JSONDecoder().decode(Horoscope.self, from: data)
+                    let horo = try JSONDecoder().decode([Horoscope].self, from: data)
                     completion(.success(horo))
                 }
                 catch   {
