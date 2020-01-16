@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		3E8B251823CF90B8004744E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B251723CF90B8004744E6 /* AppDelegate.swift */; };
 		3E8B251A23CF90B8004744E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B251923CF90B8004744E6 /* SceneDelegate.swift */; };
-		3E8B251C23CF90B8004744E6 /* HoroscopeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B251B23CF90B8004744E6 /* HoroscopeVC.swift */; };
 		3E8B251F23CF90B8004744E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B251D23CF90B8004744E6 /* Main.storyboard */; };
 		3E8B252123CF90BD004744E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B252023CF90BD004744E6 /* Assets.xcassets */; };
 		3E8B252423CF90BD004744E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8B252223CF90BD004744E6 /* LaunchScreen.storyboard */; };
 		3E8B252F23CF90BE004744E6 /* Horoscope2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B252E23CF90BE004744E6 /* Horoscope2Tests.swift */; };
 		3E8B253B23CF923A004744E6 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E8B253A23CF923A004744E6 /* ImageKit */; };
-		3E8B253D23CF930B004744E6 /* HoroscopeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B253C23CF930B004744E6 /* HoroscopeTableVC.swift */; };
+		3EF65D1723CFCA04008849D8 /* UserInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +31,6 @@
 		3E8B251423CF90B8004744E6 /* Horoscope2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscope2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B251723CF90B8004744E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E8B251923CF90B8004744E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E8B251B23CF90B8004744E6 /* HoroscopeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeVC.swift; sourceTree = "<group>"; };
 		3E8B251E23CF90B8004744E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E8B252023CF90BD004744E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E8B252323CF90BD004744E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,7 +38,7 @@
 		3E8B252A23CF90BE004744E6 /* Horoscope2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Horoscope2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8B252E23CF90BE004744E6 /* Horoscope2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope2Tests.swift; sourceTree = "<group>"; };
 		3E8B253023CF90BE004744E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E8B253C23CF930B004744E6 /* HoroscopeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeTableVC.swift; sourceTree = "<group>"; };
+		3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +83,8 @@
 			children = (
 				3E8B251723CF90B8004744E6 /* AppDelegate.swift */,
 				3E8B251923CF90B8004744E6 /* SceneDelegate.swift */,
-				3E8B251B23CF90B8004744E6 /* HoroscopeVC.swift */,
-				3E8B253C23CF930B004744E6 /* HoroscopeTableVC.swift */,
 				3E8B251D23CF90B8004744E6 /* Main.storyboard */,
+				3EF65D1623CFCA04008849D8 /* UserInfoTVC.swift */,
 				3E8B252023CF90BD004744E6 /* Assets.xcassets */,
 				3E8B252223CF90BD004744E6 /* LaunchScreen.storyboard */,
 				3E8B252523CF90BD004744E6 /* Info.plist */,
@@ -211,9 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8B253D23CF930B004744E6 /* HoroscopeTableVC.swift in Sources */,
-				3E8B251C23CF90B8004744E6 /* HoroscopeVC.swift in Sources */,
 				3E8B251823CF90B8004744E6 /* AppDelegate.swift in Sources */,
+				3EF65D1723CFCA04008849D8 /* UserInfoTVC.swift in Sources */,
 				3E8B251A23CF90B8004744E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
