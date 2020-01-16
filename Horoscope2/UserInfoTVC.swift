@@ -21,7 +21,17 @@ class UserInfoTVC: UITableViewController {
         return screenHeight / 16
     }
     
-    
+    func loadHoroscope()    {
+        // aries should be horoscope pressed in tableview
+        HoroscopeAPI.fetchHoroscope(horoscope: "aries") { (result) in
+            switch result   {
+            case .failure(let appError):
+                print(appError)
+            case .success(let horoscope):
+                print(horoscope)
+            }
+        }
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
